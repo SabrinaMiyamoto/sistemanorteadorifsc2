@@ -1,0 +1,39 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%) fixed !important;
+}
+
+.titulo-gradiente {
+  background: linear-gradient(45deg, #00f5ff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-neon {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+}
+
+.card-neon::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00f5ff, #ff00ff, #00ff88);
+}
+
+.codigo {
+  margin: 0;
+  padding: 16px;
+  overflow-x: auto;
+  border-radius: 10px;
+  background: #05060a;
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  color: #00ff88;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
