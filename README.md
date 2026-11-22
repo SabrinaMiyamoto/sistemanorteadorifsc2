@@ -10,6 +10,13 @@ Aplicação React que apresenta um formulário para cadastro de veículos no Sis
 | Habilitar o botão **Salvar** quando os dados forem válidos, com `useEffect` | `src/App.tsx` → `useEffect(..., [form])` controla `formValido` |
 | Construir e mostrar a requisição **POST** com o JSON dos dados | `src/App.tsx` → `handleSubmit` (o endpoint é fictício; nada é enviado) |
 
+## Extras (ilustrativos)
+
+- **Dashboard**: menu lateral, barra superior, cartões de estatísticas e tabela dos últimos veículos (dados fictícios em `src/dados.ts`)
+- **Modal** (`src/components/RequisicaoDialog.tsx`): mostra a requisição nas abas HTTP, `fetch()` e JSON, com botão **Copiar**
+- **Toasts** (Snackbar do MUI) para requisição montada, envio simulado, placa repetida, cópia e itens de menu ilustrativos
+- **Enviar (simulado)**: adiciona o veículo na tabela como se o backend tivesse respondido com sucesso
+
 ## Campos e validações
 
 - **Marca**: obrigatória, de 2 a 50 letras
