@@ -21,6 +21,18 @@ export interface VeiculoPayload {
   cliente_id: number;
 }
 
+// Veículo exibido na tabela do dashboard
+export interface VeiculoCadastrado extends VeiculoPayload {
+  id: number;
+  criadoEm: string;
+}
+
+// Toast (Snackbar) exibido no canto da tela
+export interface Toast {
+  mensagem: string;
+  tipo: 'success' | 'info' | 'warning' | 'error';
+}
+
 // Representação da requisição HTTP montada
 export interface RequisicaoPost {
   method: 'POST';

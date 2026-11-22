@@ -37,3 +37,13 @@ body {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
+/* Destaque da linha recém-cadastrada na tabela */
+.linha-nova td {
+  animation: brilho 2.5s ease;
+}
+
+@keyframes brilho {
+  0%, 40% { background: rgba(0, 255, 136, 0.25); }
+  100% { background: transparent; }
+}
